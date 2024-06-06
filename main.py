@@ -2,6 +2,13 @@
 # n2 - число номер 2
 # op - операция между числами
 
+def main():
+    num1 = float(input('Введите первое число: '))
+    op = input('Введите знак (+,-,*,/,^): ')
+    num2 = float(input('Введите второе число: '))
+    result = calculate(num1, num2, op)
+    print(num1, op, num2, '=', result)
+
 
 def calculate(n1, n2, op):
     if op == '+':
@@ -19,8 +26,5 @@ def calculate(n1, n2, op):
     return result
 
 
-num1 = float(input('Введите первое число: '))
-op = input('Введите знак (+,-,*,/,^): ')
-num2 = float(input('Введите второе число: '))
-result = calculate(num1, num2, op)
-print(num1, op, num2, '=', result)
+if __name__ == '__main__':
+    main()
