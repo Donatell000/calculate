@@ -3,9 +3,9 @@
 # op - операция между числами
 
 def main():
-    num1 = float(input('Введите первое число: '))
+    num1 = int(input('Введите первое число: '))
     op = input('Введите знак (+,-,*,/,^): ')
-    num2 = float(input('Введите второе число: '))
+    num2 = int(input('Введите второе число: '))
     result = calculate(num1, num2, op)
     print(num1, op, num2, '=', result)
 
